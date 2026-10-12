@@ -1231,3 +1231,67 @@ a.contact-row:hover {
     padding: 18px;
   }
 }
+
+
+/* Soft Skills Section */
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.soft-skill-card {
+  padding: 28px;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e8e5f0);
+  border-radius: 18px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(70, 50, 120, 0.09);
+}
+
+.soft-skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: #f0ebff;
+  font-size: 25px;
+}
+
+.soft-skill-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.soft-skill-card p {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text-secondary, #686579);
+}
+
+@media (max-width: 900px) {
+  .soft-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .soft-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .soft-skill-card {
+    padding: 22px;
+  }
+}
