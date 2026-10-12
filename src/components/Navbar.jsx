@@ -4,11 +4,10 @@ import { useState } from "react";
 const links = [
   ["About", "#about"],
   ["Skills", "#skills"],
-  { name: "Soft Skills", href: "#soft-skills" },
+  ["Soft Skills", "#soft-skills"],
   ["Projects", "#projects"],
   ["Achievements", "#achievements"],
   ["Education", "#education"],
-  
 ];
 
 export default function Navbar() {
@@ -17,7 +16,11 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <nav className="nav-container">
-        <a className="brand" href="#home" onClick={() => setOpen(false)}>
+        <a
+          className="brand"
+          href="#home"
+          onClick={() => setOpen(false)}
+        >
           vidhi<span>.</span>
         </a>
 
@@ -32,7 +35,11 @@ export default function Navbar() {
 
         <div className={`nav-links ${open ? "nav-open" : ""}`}>
           {links.map(([label, href]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>
+            <a
+              key={href}
+              href={href}
+              onClick={() => setOpen(false)}
+            >
               {label}
             </a>
           ))}
