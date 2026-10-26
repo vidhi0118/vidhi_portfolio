@@ -1,6 +1,3 @@
-
-/* SHARED LAYOUT */
-
 .container {
   width: min(1120px, calc(100% - 48px));
   margin-inline: auto;
@@ -1363,5 +1360,136 @@ a.contact-row:hover {
 
   .soft-skill-card h3 {
     font-size: 16px;
+  }
+}
+
+
+/* ===== Career Goals Section ===== */
+
+.career-goals-section {
+  padding: 90px 24px;
+  background: #ffffff;
+}
+
+.career-goals-section .section-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.career-goals-section .section-heading {
+  max-width: 700px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.career-goals-section .section-heading h2 {
+  margin: 0 0 16px;
+  color: #202033;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+}
+
+.career-goals-section .section-heading h2 span {
+  color: #7054f5;
+}
+
+.career-goals-section .section-heading p {
+  color: #6f6d82;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.career-goals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.career-goal-card {
+  min-width: 0;
+  padding: 28px 24px;
+  background: #faf9ff;
+  border: 1px solid #e9e5f5;
+  border-radius: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.career-goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(75, 55, 150, 0.09);
+}
+
+.career-goal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.career-goal-number {
+  color: #7054f5;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.career-goal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #f0ebff;
+  font-size: 23px;
+}
+
+.career-goal-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #7054f5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.career-goal-card h3 {
+  margin: 0 0 14px;
+  color: #25243a;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.career-goal-card p {
+  margin: 0;
+  color: #747187;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+  .career-goals-section {
+    padding: 72px 24px;
+  }
+
+  .career-goals-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .career-goals-section {
+    padding: 60px 20px;
+  }
+
+  .career-goals-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .career-goal-card {
+    padding: 24px 20px;
   }
 }
