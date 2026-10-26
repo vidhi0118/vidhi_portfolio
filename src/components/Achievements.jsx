@@ -16,13 +16,7 @@ const certificates = [
     description:
       "Participation in Internal Smart India Hackathon 2026 at CMPICA, CHARUSAT.",
   },
-  {
-    title: "Advanced Java",
-    organization: "Coursera",
-    image: "/images/advanced-java.png",
-    description:
-      "Certification in Advanced Java. Add the exact course title and credential link when available.",
-  },
+
   {
     title: "Build and Configure Networks with Packet Tracer",
     organization: "Cisco",
