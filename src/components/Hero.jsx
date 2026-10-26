@@ -4,8 +4,8 @@ const profile = {
   role: "Aspiring Full-Stack Developer",
   github: "https://github.com/vidhi0118",
   linkedin: "https://www.linkedin.com/in/vidhi-patel-8ba4723a1/",
-  // Replace this with your actual email address.
-  email: "your-email@example.com",
+
+  email: "vidhiptl0118@gmail.com",
 };
 
 export default function Hero() {
@@ -36,9 +36,7 @@ export default function Hero() {
             <a className="button button-primary" href="#projects">
               Explore My Work ↗
             </a>
-            <a className="button button-secondary" href="#contact">
-              Contact Me
-            </a>
+           
           </div>
 
           <div className="hero-socials">

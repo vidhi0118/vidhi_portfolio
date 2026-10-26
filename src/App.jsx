@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Education from "./components/Education";
 import CareerGoals from "./components/CareerGoals";
+
 //import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
