@@ -30,6 +30,43 @@ const certificates = [
     description:
       "Certification covering network building and configuration with Packet Tracer.",
   },
+  
+{
+  title: "Advanced Java",
+  organization: "Coursera",
+  image: "/images/advanced-java.jpg",
+  description:
+    "Certificate demonstrating learning in advanced Java programming concepts.",
+},
+{
+  title: ".NET FullStack Developer",
+  organization: "Coursera",
+  image: "/images/dotnet-fullstack.jpg",
+  description:
+    "Certificate covering full-stack development concepts using .NET technologies.",
+},
+{
+  title: "C# for .NET Developers",
+  organization: "Coursera",
+  image: "/images/csharp-dotnet.jpg",
+  description:
+    "Certificate covering C# programming and .NET development fundamentals.",
+},
+{
+  title: "Introduction to MongoDB",
+  organization: "Coursera",
+  image: "/images/introduction-mongodb.jpg",
+  description:
+    "Certificate covering the fundamentals of MongoDB and NoSQL databases.",
+},
+{
+  title: "Build and Configure Networks with Packet Tracer",
+  organization: "Cisco",
+  image: "/images/backend.png",
+  description:
+    "Certification covering network building and configuration with Packet Tracer.",
+},
+
 ];
 
 export default function Achievements() {
